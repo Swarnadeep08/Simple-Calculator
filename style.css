@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background: #DDE1E7;
+}
+
+.calculator {
+  width: 330px;
+  background: #DDE1E7;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: -3px -3px 7px #ffffff73,
+              2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.result {
+  height: 60px;
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: inset -3px -3px 7px #ffffff73,
+              inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.result #screen {
+  height: 100%;
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 0 10px;
+  text-align: right;
+  color: #6B4F4F;
+  pointer-events: none;
+}
+
+.buttons {
+  display: flex;
+  text-align: center;
+  padding: 30px 0 0 0;
+  justify-content: center;
+}
+
+.buttons button {
+  height: 56px;
+  width: 56px;
+  font-size: 23px;
+  margin: 5px;
+  border: none;
+  outline: none;
+  color: #6B4F4F;
+  background: #DDE1E7;
+  border-radius: 5px;
+  box-shadow: -3px -3px 7px #ffffff73,
+              2px 2px 5px rgba(94, 104, 121, 0.288);
+}
+
+.buttons button:focus {
+  color: #3498DB;
+  transform: scale(0.96);
+  box-shadow: inset -3px -3px 7px #ffffff73,
+              inset 2px 2px 5px rgba(94, 104, 121, 0.288);
+}
